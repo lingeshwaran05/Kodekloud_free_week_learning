@@ -1,5 +1,11 @@
 package main
 import "fmt"
+func copy(des []int, src []int) []int{
+	copyarray:=copy(src,des)
+	
+	fmt.Print("length of copied array is ",len(copyarray))
+	return copyarray
+}
 func main(){
 	//Array to store similar type of objects
 	var a[5] int
@@ -62,13 +68,9 @@ func main(){
 	new_slice=append(new_slice[:2],new_slice[3:]...)
 	fmt.Println(new_slice)
 	//copy from a slice
-	func copy(des,src,[]int)int{
-		copy:=copy(src,des)t
-		fmt.Println(copy)
-		fmt.Println("number of elements in slice",len(copy))
-	}
-	des:=[4]int{1,2,3,4}
-	src:=[3]int{5,6,7}
+
+	des:=[]int{1,2,3,4}
+	src:=[]int{5,6,7,8}
 	copy(des,src)
 
 }
