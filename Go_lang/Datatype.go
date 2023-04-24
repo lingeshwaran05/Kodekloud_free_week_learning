@@ -28,4 +28,11 @@ func main(){
 	//this is short declaration
 	str:="bar"
 	fmt.Print(str)
+	//const <constname><datatype>=<value>
+	//typed and untyped
+	const age=12
+	const name1 string="foo"
+	//usage
+	const PI float64=3.14159265358979323846
+	
 }
