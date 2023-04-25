@@ -1,0 +1,5 @@
+echo "this is the value $1"
+echo "this is the value $2 and $1"
+echo "add $(( $1 + $2 ))"
+echo "sub $(( $1 - $2 ))"
+eval "echo $(( $1 + $2 ))"
